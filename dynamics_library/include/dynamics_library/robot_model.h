@@ -19,6 +19,9 @@ public:
     void SetDynamicsParameters(const VectorXd param);
 
     VectorXd calcu_inv_dyn(const VectorXd q, const VectorXd qDot, const VectorXd qDDot);
+    MatrixXd calcu_InertiaMatrix(const VectorXd q);
+    VectorXd calcu_CoriolisCentripetal(const VectorXd q, const VectorXd qDot);
+    VectorXd calcu_Gravity(const VectorXd q);
 
     int dof;
     double g;

@@ -1,4 +1,4 @@
-# Install script for directory: /home/stz/sawyer-dynamics-identify/dynamics_library
+# Install script for directory: /home/stz/sawyer-dynamics-identify-v1.1/dynamics_library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -41,7 +41,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/include" TYPE DIRECTORY FILES "/home/stz/sawyer-dynamics-identify/dynamics_library/include/")
+file(INSTALL DESTINATION "/usr/include" TYPE DIRECTORY FILES "/home/stz/sawyer-dynamics-identify-v1.1/dynamics_library/include/")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -59,7 +59,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/lib" TYPE SHARED_LIBRARY FILES "/home/stz/sawyer-dynamics-identify/dynamics_library/build/lib/librobotdynamics.so")
+file(INSTALL DESTINATION "/usr/lib" TYPE SHARED_LIBRARY FILES "/home/stz/sawyer-dynamics-identify-v1.1/dynamics_library/build/lib/librobotdynamics.so")
   if(EXISTS "$ENV{DESTDIR}/usr/lib/librobotdynamics.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/lib/librobotdynamics.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -76,5 +76,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/stz/sawyer-dynamics-identify/dynamics_library/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/stz/sawyer-dynamics-identify-v1.1/dynamics_library/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

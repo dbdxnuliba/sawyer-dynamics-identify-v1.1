@@ -14,22 +14,22 @@ int main(int argc, char **argv)
     unsigned int row;
     unsigned int col;
 
-    file_path = "/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/filter_data/q_filter.txt";
+    file_path = "/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/filter_data/q_filter.txt";
     deal_txt::get_matrix_size(file_path, row, col);
     MatrixXd q_filter = MatrixXd::Zero(row,col);
     deal_txt::get_data_matrix(file_path, col, q_filter);
 
-    file_path = "/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/filter_data/qDot_filter.txt";
+    file_path = "/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/filter_data/qDot_filter.txt";
     deal_txt::get_matrix_size(file_path, row, col);
     MatrixXd qDot_filter = MatrixXd::Zero(row,col);
     deal_txt::get_data_matrix(file_path, col, qDot_filter);
 
-    file_path = "/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/filter_data/qDDot_filter.txt";
+    file_path = "/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/filter_data/qDDot_filter.txt";
     deal_txt::get_matrix_size(file_path, row, col);
     MatrixXd qDDot_filter = MatrixXd::Zero(row,col);
     deal_txt::get_data_matrix(file_path, col, qDDot_filter);
 
-    file_path = "/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/filter_data/tau_filter.txt";
+    file_path = "/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/filter_data/tau_filter.txt";
     deal_txt::get_matrix_size(file_path, row, col);
     MatrixXd tau_filter = MatrixXd::Zero(row,col);
     deal_txt::get_data_matrix(file_path, col, tau_filter);
@@ -99,8 +99,32 @@ int main(int argc, char **argv)
             qDot_filter.row(i).transpose(), qDDot_filter.row(i).transpose()).transpose();
     }
 
+    std::ofstream dyn_params_file;
+    dyn_params_file.open("/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/identify_result/dyn_params.txt");
+    dyn_params_file << "Pb = [";
+    for (unsigned int j=0; j<robot.Pb_num; j++)
+    {
+        dyn_params_file << robot.Pb(j);
+        if (j!=(robot.Pb_num-1))
+        {
+            dyn_params_file << ", ";
+        }
+    }
+    dyn_params_file << "]" << std::endl;
+    dyn_params_file << "Ps = [";
+    for (unsigned int j=0; j<robot.Ps_num; j++)
+    {
+        dyn_params_file << robot.Ps(j);
+        if (j!=(robot.Ps_num-1))
+        {
+            dyn_params_file << ", ";
+        }
+    }
+    dyn_params_file << "]" << std::endl;
+    dyn_params_file.close();
+
     std::ofstream tau_iden_file;
-    tau_iden_file.open("/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/identify_result/tau_iden.txt");
+    tau_iden_file.open("/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/identify_result/tau_iden.txt");
     tau_iden_file << "[";
     for (unsigned int i=0; i<row; i++)
     {
@@ -113,7 +137,14 @@ int main(int argc, char **argv)
             }
             else
             {
-                tau_iden_file << ";...";
+                if (i!=(row-1))
+                {
+                    tau_iden_file << ";...";
+                }
+                else
+                {
+                    tau_iden_file << "]";
+                }
             }
         }
         
@@ -122,7 +153,6 @@ int main(int argc, char **argv)
             tau_iden_file << std::endl;
         }
     }
-    tau_iden_file << "]";
     
     tau_iden_file.close();
 

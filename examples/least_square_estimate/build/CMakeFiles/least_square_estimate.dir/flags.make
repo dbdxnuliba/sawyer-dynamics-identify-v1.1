@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -O3
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/include 
+CXX_INCLUDES = -I/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/include 
 

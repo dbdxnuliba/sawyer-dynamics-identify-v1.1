@@ -1,4 +1,4 @@
-# Install script for directory: /home/stz/sawyer-dynamics-identify/examples/excitation_trajectory
+# Install script for directory: /home/stz/sawyer-dynamics-identify-v1.1/examples/excitation_trajectory
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/stz/sawyer-dynamics-identify/examples/excitation_trajectory/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/stz/sawyer-dynamics-identify-v1.1/examples/excitation_trajectory/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

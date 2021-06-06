@@ -3,7 +3,7 @@
 
 CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.o
  ../include/least_square_estimate/deal_txt_data.h
- /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/deal_txt_data.cpp
+ /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/deal_txt_data.cpp
 CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.o
  ../include/least_square_estimate/deal_txt_data.h
- /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/least_square_estimate.cpp
+ /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/least_square_estimate.cpp

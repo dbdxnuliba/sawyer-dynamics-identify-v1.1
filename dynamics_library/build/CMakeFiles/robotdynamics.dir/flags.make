@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -O3 -fPIC
 
 CXX_DEFINES = -Drobotdynamics_EXPORTS
 
-CXX_INCLUDES = -I/home/stz/sawyer-dynamics-identify/dynamics_library/include 
+CXX_INCLUDES = -I/home/stz/sawyer-dynamics-identify-v1.1/dynamics_library/include 
 

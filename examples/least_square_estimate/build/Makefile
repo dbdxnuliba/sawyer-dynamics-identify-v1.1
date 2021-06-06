@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stz/sawyer-dynamics-identify/examples/least_square_estimate
+CMAKE_SOURCE_DIR = /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build
+CMAKE_BINARY_DIR = /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build/CMakeFiles /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build/CMakeFiles /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

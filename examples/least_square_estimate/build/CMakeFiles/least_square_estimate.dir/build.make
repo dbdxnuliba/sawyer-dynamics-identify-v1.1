@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stz/sawyer-dynamics-identify/examples/least_square_estimate
+CMAKE_SOURCE_DIR = /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build
+CMAKE_BINARY_DIR = /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/least_square_estimate.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/least_square_estimate.dir/flags.make
 
 CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.o: CMakeFiles/least_square_estimate.dir/flags.make
 CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.o: ../src/deal_txt_data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.o -c /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/deal_txt_data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.o -c /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/deal_txt_data.cpp
 
 CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/deal_txt_data.cpp > CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/deal_txt_data.cpp > CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.i
 
 CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/deal_txt_data.cpp -o CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/deal_txt_data.cpp -o CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.s
 
 CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/least_square_estimate.dir/src/deal_txt_data.cpp.o.provides.build: CMa
 
 CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.o: CMakeFiles/least_square_estimate.dir/flags.make
 CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.o: ../src/least_square_estimate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.o -c /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/least_square_estimate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.o -c /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/least_square_estimate.cpp
 
 CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/least_square_estimate.cpp > CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/least_square_estimate.cpp > CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.i
 
 CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/least_square_estimate.cpp -o CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/least_square_estimate.cpp -o CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.s
 
 CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.o.requires:
 
@@ -117,7 +117,7 @@ bin/least_square_estimate: CMakeFiles/least_square_estimate.dir/src/deal_txt_dat
 bin/least_square_estimate: CMakeFiles/least_square_estimate.dir/src/least_square_estimate.cpp.o
 bin/least_square_estimate: CMakeFiles/least_square_estimate.dir/build.make
 bin/least_square_estimate: CMakeFiles/least_square_estimate.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/least_square_estimate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/least_square_estimate"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/least_square_estimate.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,6 +135,6 @@ CMakeFiles/least_square_estimate.dir/clean:
 .PHONY : CMakeFiles/least_square_estimate.dir/clean
 
 CMakeFiles/least_square_estimate.dir/depend:
-	cd /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stz/sawyer-dynamics-identify/examples/least_square_estimate /home/stz/sawyer-dynamics-identify/examples/least_square_estimate /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build /home/stz/sawyer-dynamics-identify/examples/least_square_estimate/build/CMakeFiles/least_square_estimate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build /home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/build/CMakeFiles/least_square_estimate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/least_square_estimate.dir/depend
 

@@ -357,6 +357,148 @@ VectorXd RobotModel::calcu_inv_dyn(const VectorXd q, const VectorXd qDot, const 
     return tau;
 }
 
+MatrixXd RobotModel::calcu_InertiaMatrix(const VectorXd q)
+{
+    VectorXd qDot = VectorXd::Zero(dof);
+
+    double g_ = g;
+    g = 0;
+
+    double FS1_ = FS1;
+    double FS2_ = FS2;
+    double FS3_ = FS3;
+    double FS4_ = FS4;
+    double FS5_ = FS5;
+    double FS6_ = FS6;
+    double FS7_ = FS7;
+    FS1 = 0;
+    FS2 = 0;
+    FS3 = 0;
+    FS4 = 0;
+    FS5 = 0;
+    FS6 = 0;
+    FS7 = 0;
+
+    MatrixXd M = MatrixXd::Zero(dof,dof);
+
+    for (unsigned int i=0; i< dof; i++)
+    {
+        VectorXd qDDot = VectorXd::Zero(dof);
+
+        qDDot(i) = 1;
+        M.col(i) = calcu_inv_dyn(q,qDot,qDDot);
+    }
+
+    g = g_;
+    
+    FS1 = FS1_;
+    FS2 = FS2_;
+    FS3 = FS3_;
+    FS4 = FS4_;
+    FS5 = FS5_;
+    FS6 = FS6_;
+    FS7 = FS7_;
+    
+    return M;
+}
+
+VectorXd RobotModel::calcu_CoriolisCentripetal(const VectorXd q, const VectorXd qDot)
+{
+    VectorXd qDDot = VectorXd::Zero(dof);
+
+    double g_ = g;
+    g = 0;
+
+    double FV1_ = FV1;
+    double FV2_ = FV2;
+    double FV3_ = FV3;
+    double FV4_ = FV4;
+    double FV5_ = FV5;
+    double FV6_ = FV6;
+    double FV7_ = FV7;
+    FV1 = 0;
+    FV2 = 0;
+    FV3 = 0;
+    FV4 = 0;
+    FV5 = 0;
+    FV6 = 0;
+    FV7 = 0;
+    
+    double FS1_ = FS1;
+    double FS2_ = FS2;
+    double FS3_ = FS3;
+    double FS4_ = FS4;
+    double FS5_ = FS5;
+    double FS6_ = FS6;
+    double FS7_ = FS7;
+    FS1 = 0;
+    FS2 = 0;
+    FS3 = 0;
+    FS4 = 0;
+    FS5 = 0;
+    FS6 = 0;
+    FS7 = 0;
+
+    VectorXd H = VectorXd::Zero(dof);
+
+    H = calcu_inv_dyn(q,qDot,qDDot);
+
+    g = g_;
+
+    FV1 = FV1_;
+    FV2 = FV2_;
+    FV3 = FV3_;
+    FV4 = FV4_;
+    FV5 = FV5_;
+    FV6 = FV6_;
+    FV7 = FV7_;
+    
+    FS1 = FS1_;
+    FS2 = FS2_;
+    FS3 = FS3_;
+    FS4 = FS4_;
+    FS5 = FS5_;
+    FS6 = FS6_;
+    FS7 = FS7_;
+
+    return H;
+}
+
+VectorXd RobotModel::calcu_Gravity(const VectorXd q)
+{
+    VectorXd qDot = VectorXd::Zero(dof);
+    VectorXd qDDot = VectorXd::Zero(dof);
+
+    double FS1_ = FS1;
+    double FS2_ = FS2;
+    double FS3_ = FS3;
+    double FS4_ = FS4;
+    double FS5_ = FS5;
+    double FS6_ = FS6;
+    double FS7_ = FS7;
+    FS1 = 0;
+    FS2 = 0;
+    FS3 = 0;
+    FS4 = 0;
+    FS5 = 0;
+    FS6 = 0;
+    FS7 = 0;
+
+    VectorXd G = VectorXd::Zero(dof);
+
+    G = calcu_inv_dyn(q,qDot,qDDot);
+
+    FS1 = FS1_;
+    FS2 = FS2_;
+    FS3 = FS3_;
+    FS4 = FS4_;
+    FS5 = FS5_;
+    FS6 = FS6_;
+    FS7 = FS7_;
+
+    return G;
+}
+
 }
 
 

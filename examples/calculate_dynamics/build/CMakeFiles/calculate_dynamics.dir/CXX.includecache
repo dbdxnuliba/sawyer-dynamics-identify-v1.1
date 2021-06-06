@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stz/sawyer-dynamics-identify-v1.1/examples/calculate_dynamics/src/calculate_dynamics.cpp
+dynamics_library/robot_model.h
+-
+Eigen/Dense
+-
+iostream
+-
+math.h
+-
+time.h
+-
+

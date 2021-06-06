@@ -83,7 +83,7 @@ int main(int argc, char ** argv)
     nlopt_destroy(opt);
 
     std::ofstream outfile;
-    outfile.open("optimal_x.txt");
+    outfile.open("/home/stz/sawyer-dynamics-identify-v1.1/examples/excitation_trajectory/optimal_result/optimal_x.txt");
     outfile << "number of basic dynamics parameters (Pb_num): " << robot.Pb_num << std::endl;
     outfile << "optimal value of x is:" << std::endl;
     outfile << "[";

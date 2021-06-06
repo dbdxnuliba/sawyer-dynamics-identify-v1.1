@@ -22,11 +22,11 @@ cstdlib
 Eigen/Dense
 -
 
-/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/deal_txt_data.cpp
+/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/deal_txt_data.cpp
 least_square_estimate/deal_txt_data.h
 -
 
-/home/stz/sawyer-dynamics-identify/examples/least_square_estimate/src/least_square_estimate.cpp
+/home/stz/sawyer-dynamics-identify-v1.1/examples/least_square_estimate/src/least_square_estimate.cpp
 least_square_estimate/deal_txt_data.h
 -
 string
