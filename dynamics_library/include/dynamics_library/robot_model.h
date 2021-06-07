@@ -22,6 +22,7 @@ public:
     MatrixXd calcu_InertiaMatrix(const VectorXd q);
     VectorXd calcu_CoriolisCentripetal(const VectorXd q, const VectorXd qDot);
     VectorXd calcu_Gravity(const VectorXd q);
+    VectorXd calcu_Friction(const VectorXd qDot);
 
     int dof;
     double g;

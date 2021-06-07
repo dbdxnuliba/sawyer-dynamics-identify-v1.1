@@ -499,6 +499,21 @@ VectorXd RobotModel::calcu_Gravity(const VectorXd q)
     return G;
 }
 
+VectorXd RobotModel::calcu_Friction(const VectorXd qDot)
+{
+    VectorXd F = VectorXd::Zero(dof);
+
+    F(0) = FV1*qDot(0)+FS1*sign(qDot(0));
+    F(1) = FV2*qDot(1)+FS2*sign(qDot(1));
+    F(2) = FV3*qDot(2)+FS3*sign(qDot(2));
+    F(3) = FV4*qDot(3)+FS4*sign(qDot(3));
+    F(4) = FV5*qDot(4)+FS5*sign(qDot(4));
+    F(5) = FV6*qDot(5)+FS6*sign(qDot(5));
+    F(6) = FV7*qDot(6)+FS7*sign(qDot(6));
+
+    return F;
+}
+
 }
 
 
